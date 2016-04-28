@@ -295,6 +295,7 @@
 
 /*Search Box
 ------------------------------------*/
+/*
 .header-v6 .search-open {
 	top: 0;
 	right: 0;
@@ -360,7 +361,7 @@
 
 .header-v6 li.menu-icons i.fa-times {
 	color: #444;
-}
+}*/
 
 
 /*--------------------------------------------------
@@ -1600,4 +1601,150 @@
 .equal-height-list li+li {
 	width: 50%;
 	float: left;
+}
+
+/*--------------------------------------------------
+    [5. Header - Search]
+----------------------------------------------------*/
+
+/*Search Box
+------------------------------------*/
+.header-v6 .nav > li > .search {
+	color: #aaa;
+	cursor: pointer;
+	min-width: 35px;
+	font-size: 15px;
+	text-align: center;
+	background: #f7f7f7;
+	padding: 11px 0 12px;
+	display: inline-block;
+	border-bottom: solid 2px #aaa;
+}
+
+@media (min-width: 992px) {
+	.header-v6 .nav > li > .search {
+		bottom: -2px;
+		position: relative;
+	}
+}
+
+.header-v6 .nav > li > .search:hover {
+	color: #72c02c;
+	background: #f7f7f7;
+	border-bottom-color: #72c02c;
+}
+
+.header-v6 .nav .search-open {
+	right: 0;
+	top: 40px;
+	display: none;
+	padding: 14px;
+	position: absolute;
+	background: #fcfcfc;
+	border-top: solid 2px #eee;
+	box-shadow: 0 1px 3px #ddd;
+	width: 330px;
+}
+
+.header-v6 .nav .search-open form {
+	margin: 0;
+}
+
+@media (min-width: 767px) and (max-width: 991px) {
+	.header-v6 .navbar-toggle {
+		margin-right: 0;
+	}
+
+	.header-v6 .nav .search-open {
+		width: 93%;
+	}
+}
+
+@media (max-width: 991px) {
+	.header-v6 .nav > li > .search {
+		color: #999;
+		width: 35px;
+		height: 34px;
+		text-align: left;
+		background: #eee;
+		line-height: 12px;
+		text-align: center;
+		margin: 5px 10px 0;
+		border-bottom: none;
+	}
+
+	.header-v6 .nav > li > .search:hover {
+		background: #5fb611;
+		color: #fff !important;
+	}
+
+	.header-v6 .nav .search-open {
+		top: 5px;
+		padding: 0;
+		left: 48px;
+		border-top: none;
+		box-shadow: none;
+		background: none;
+		margin-right: 10px;
+	}
+}
+
+/*动画*/
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+.btn-u {
+	border: 0;
+	color: #fff;
+	font-size: 14px;
+	cursor: pointer;
+	font-weight: 400;
+	padding: 6px 13px;
+	position: relative;
+	background: #72c02c;
+	white-space: nowrap;
+	display: inline-block;
+	text-decoration: none;
+}
+.btn-u:hover {
+	color: #fff;
+	text-decoration: none;
+	transition: all 0.3s ease-in-out;
 }
