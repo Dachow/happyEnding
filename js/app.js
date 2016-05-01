@@ -343,3 +343,10 @@ var App = function () {
 		},
 	};
 }();
+
+// $(document).ready(function(){
+// 		$(".fa-weixin").click(function(){
+// 			$("#myModal").addClass("in");
+// 			$("#myModal").css("display", "block");
+// 		})
+// })

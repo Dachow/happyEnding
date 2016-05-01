@@ -48,7 +48,7 @@ label {
 }
 
 a {
- color: #72c02c;
+ color: #2b91fd;
  text-decoration: none;
 }
 
@@ -65,7 +65,7 @@ a:focus {
 text-decoration: none;
 }
 a:hover {
- color: #72c02c;
+ color: #2b91fd;
  text-decoration: underline;
 }
 
@@ -164,4 +164,124 @@ select::-ms-expand {
 	.carousel-indicators {
 		bottom: 10px;
 	}
+}
+
+/*图书推荐*/
+.owl-clients-v1 .item {
+	text-align: center;
+}
+.owl-clients-v1 .item img {
+	width: 100px;
+}
+
+.hr {
+	margin: 15px 0;
+	border-bottom: 3px solid #2b91fd;
+}
+/*页脚*/
+footer .fa {
+	font-size: 40px;
+}
+footer .col-md-1 {
+	text-align: right;
+}
+footer .weixin {
+	position: relative;
+}
+footer .weixin button {
+	position: absolute;
+}
+footer .weixin button {
+	width: 50px; 
+	height: 50px;
+	margin-left: -47px;
+	background: transparent;
+	/*border: none;*/
+}
+footer .weixin button:visited,
+footer .weixin button:hover,
+footer .weixin button:active,
+footer .weixin button:focus
+ {
+	background: transparent;
+}
+
+/*右侧咨询展开动画*/
+
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+
+/*咨询*/
+.style-swticher-body {
+	padding: 0;
+	background: #fff;
+	color: #333;
+} 
+.style-swticher-body ul {
+	padding-left: 0;
+	padding-top: 10px;
+}
+.style-swticher-body ul li {
+	padding-left: 40px;
+	height: 40px;
+	line-height: 35px;
+	border-bottom: 1px dashed #ccc;
+}
+.style-swticher-body ul li:first-child {
+	border-top: 1px dashed #ccc;
+}
+.style-swticher-body ul li:hover {
+	background: #eee;
+}
+.style-swticher-body ul li i {
+	font-size: 20px;
+	padding-right: 10px;
+}
+
+/*qq在线效果*/
+.qqonline i {
+	color: #2b91fd;
+}
+.style-swticher-body p {
+	margin: 0;
+	color: #fff;
+	background: #2b91fd;
+	padding-left: 5px;
+	font-size: .9em;
+}
+.style-swticher-body p:nth-of-type(1) {
+	padding-top: 5px;
+}
+.style-swticher-body p:last-child {
+	padding-bottom: 5px;
 }
