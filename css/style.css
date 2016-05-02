@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
  * Template Name: Unify - Responsive Bootstrap Template
  * Description: Business, Corporate, Portfolio, E-commerce, Blog and One Page Template.
@@ -5,24 +6,19 @@
  * Author: @htmlstream
  * Website: http://htmlstream.com
 */
-
 /*Import Global Compulsory CSS Files*/
 /*@import url(app.css);*/
 /*@import url(blocks.css);*/
-
 /*Import CSS Plugins*/
 /*@import url(plugins/style-switcher.css);*/
-
 * {
-	border-radius: 0;
-}
+  border-radius: 0; }
 
 body {
- color: #333;
- font-size: 14px;
- line-height: 1.6;
- font-family: 微软雅黑, "Helvetica Neue",Helvetica,Arial,sans-serif;
-}
+  color: #333;
+  font-size: 14px;
+  line-height: 1.6;
+  font-family: 微软雅黑, "Helvetica Neue",Helvetica,Arial,sans-serif; }
 
 /*body.header-fixed-space {
   padding-top: 94px;
@@ -38,19 +34,17 @@ body.header-fixed-space-v2 {
 	}
 }*/
 ul, li {
-	list-style-type: none;
-}
+  list-style-type: none; }
+
 p,
 li,
 li a,
 label {
- color: #555;
-}
+  color: #555; }
 
 a {
- color: #2b91fd;
- text-decoration: none;
-}
+  color: #2b91fd;
+  text-decoration: none; }
 
 a,
 a:focus,
@@ -58,230 +52,281 @@ a:hover,
 a:active,
 button,
 button:hover {
-	outline: 0 !important;
-}
+  outline: 0 !important; }
 
 a:focus {
-text-decoration: none;
-}
+  text-decoration: none; }
+
 a:hover {
- color: #2b91fd;
- text-decoration: underline;
-}
+  color: #2b91fd;
+  text-decoration: underline; }
 
 /*Boxed Layout
 ------------------------------------*/
 .wrapper {
-	background: #fff;
-}
+  background: #fff; }
 
 .boxed-layout {
   padding: 0;
   box-shadow: 0 0 5px #ccc;
   margin-left: auto !important;
   margin-right: auto !important;
-  background: url(../img/patterns/15.png) repeat;
-}
+  background: url(../img/patterns/15.png) repeat; }
 
 /*Hiding arrows for select field in IE*/
 select::-ms-expand {
-  display: none;
-}
+  display: none; }
+
+.headline {
+  border-bottom: 2px solid #eee;
+  margin: 15px 0;
+  padding-bottom: 5px;
+  width: 300px; }
+  .headline h2 {
+    text-indent: 1em;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #2b91fd;
+    display: inline;
+    margin: 0;
+    font-size: 22px; }
+
+.no-headline {
+  border-bottom: none !important; }
+  .no-headline h2 {
+    border-bottom: none !important; }
 
 /*标题新闻*/
 .news .newstop h3 {
-	font-family: 黑体, 微软雅黑, sans-serif;
-	margin: 5px 0 10px;
-}
+  font-family: 黑体, 微软雅黑, sans-serif;
+  margin: 5px 0 10px; }
+
 .news .newstop .desc {
-	text-indent: 2em;
-}
-.news .newstop .desc  small {
-	color: #777
-}
-.news .newslist {
-	margin-top: 17px;
-}
+  text-indent: 2em; }
+
+.news .newstop .date {
+  padding-right: 20px;
+  text-align: right;
+  color: #777; }
 
 /*新闻列表*/
 .news .newslist .time {
-	float: right;
-	color: #777;
-	font-size: .9em;
-	/*display: inline-block;
-	margin-right: 20px;*/
-}
-/*轮播图*/
+  float: right;
+  color: #777;
+  font-size: .9em;
+  /*display: inline-block;
+  margin-right: 20px;*/ }
 
+.newslist {
+  margin-top: 20px; }
+  .newslist ul li {
+    line-height: 2.2; }
+    .newslist ul li:hover {
+      background: #eee;
+      cursor: pointer; }
+
+/*轮播图*/
 /*--------------------------------------------------
 	[46. Bootstrap Carousels]
 ----------------------------------------------------*/
 /* Bootstrap Carousel v1
 ------------------------------------*/
 .carousel-v1 .carousel-caption {
-	left: 0;
-	right: 0;
-	bottom: 0;
-	padding: 7px 15px;
-	background: rgba(0, 0, 0, 0.7);
-}
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 7px 15px;
+  background: rgba(0, 0, 0, 0.7); }
 
 .carousel-v1 .carousel-caption p {
-	color: #fff;
-	margin-bottom: 0;
-}
+  color: #fff;
+  margin-bottom: 0; }
 
 .carousel-v1 .carousel-arrow a.carousel-control {
-	opacity: 1;
-	font-size:30px;
-	height:inherit;
-	width: inherit;
-	background: none;
-	text-shadow: none;
-	position: inherit;
-}
+  opacity: 1;
+  font-size: 30px;
+  height: inherit;
+  width: inherit;
+  background: none;
+  text-shadow: none;
+  position: inherit; }
 
 .carousel-v1 .carousel-arrow a i {
-	top: 50%;
-	opacity: 0.6;
-	background: #000;
-	margin-top: -18px;
-	padding: 2px 12px;
-	position: absolute;
-}
+  top: 50%;
+  opacity: 0.6;
+  background: #000;
+  margin-top: -18px;
+  padding: 2px 12px;
+  position: absolute; }
+
 .carousel-v1 .carousel-arrow a i:hover {
-	opacity: 0.8;
-}
+  opacity: 0.8; }
 
 .carousel-v1 .carousel-arrow a.left i {
-	left: 0;
-}
+  left: 0; }
+
 .carousel-v1 .carousel-arrow a.right i {
-	right: 0;
-}
+  right: 0; }
 
 @media (min-width: 768px) {
-	.carousel-indicators {
-		bottom: 10px;
-	}
-}
-
+  .carousel-indicators {
+    bottom: 10px; } }
 /*图书推荐*/
 .owl-clients-v1 .item {
-	text-align: center;
-}
+  text-align: center; }
+
 .owl-clients-v1 .item img {
-	width: 100px;
-}
+  width: 100px; }
 
 .hr {
-	margin: 15px 0;
-	border-bottom: 3px solid #2b91fd;
-}
+  margin: 15px 0;
+  border-bottom: 3px solid #2b91fd; }
+
 /*页脚*/
+footer {
+  padding: 15px 0; }
+  footer .logo-bottom img {
+    width: 50%; }
+
 footer .fa {
-	font-size: 40px;
-}
+  font-size: 30px; }
+
 footer .col-md-1 {
-	text-align: right;
-}
+  text-align: right; }
+
 footer .weixin {
-	position: relative;
-}
+  position: relative; }
+
 footer .weixin button {
-	position: absolute;
-}
+  position: absolute; }
+
 footer .weixin button {
-	width: 50px; 
-	height: 50px;
-	margin-left: -47px;
-	background: transparent;
-	/*border: none;*/
-}
+  width: 50px;
+  height: 50px;
+  margin-left: -47px;
+  background: transparent;
+  border: none; }
+
+.btn-primary:active:focus, .btn-primary:active:hover {
+  background: transparent; }
+
 footer .weixin button:visited,
 footer .weixin button:hover,
 footer .weixin button:active,
-footer .weixin button:focus
- {
-	background: transparent;
-}
+footer .weixin button:focus {
+  background: transparent; }
+
+.modal-body img {
+  width: 100%;
+  display: block;
+  text-align: center; }
 
 /*右侧咨询展开动画*/
-
 @-webkit-keyframes fadeInRight {
   from {
     opacity: 0;
     -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-  }
-
+    transform: translate3d(100%, 0, 0); }
   to {
     opacity: 1;
     -webkit-transform: none;
-    transform: none;
-  }
-}
-
+    transform: none; } }
 @keyframes fadeInRight {
   from {
     opacity: 0;
     -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-  }
-
+    transform: translate3d(100%, 0, 0); }
   to {
     opacity: 1;
     -webkit-transform: none;
-    transform: none;
-  }
-}
-
+    transform: none; } }
 .fadeInRight {
   -webkit-animation-name: fadeInRight;
-  animation-name: fadeInRight;
-}
+  animation-name: fadeInRight; }
 
 /*咨询*/
 .style-swticher-body {
-	padding: 0;
-	background: #fff;
-	color: #333;
-} 
+  padding: 0;
+  background: #fff;
+  color: #333; }
+
 .style-swticher-body ul {
-	padding-left: 0;
-	padding-top: 10px;
-}
+  padding-left: 0;
+  padding-top: 10px; }
+
 .style-swticher-body ul li {
-	padding-left: 40px;
-	height: 40px;
-	line-height: 35px;
-	border-bottom: 1px dashed #ccc;
-}
+  padding-left: 40px;
+  height: 40px;
+  line-height: 35px;
+  border-bottom: 1px dashed #ccc; }
+
 .style-swticher-body ul li:first-child {
-	border-top: 1px dashed #ccc;
-}
+  border-top: 1px dashed #ccc; }
+
 .style-swticher-body ul li:hover {
-	background: #eee;
-}
+  background: #eee; }
+
 .style-swticher-body ul li i {
-	font-size: 20px;
-	padding-right: 10px;
-}
+  font-size: 20px;
+  padding-right: 10px; }
 
 /*qq在线效果*/
 .qqonline i {
-	color: #2b91fd;
-}
+  color: #2b91fd; }
+
 .style-swticher-body p {
-	margin: 0;
-	color: #fff;
-	background: #2b91fd;
-	padding-left: 5px;
-	font-size: .9em;
-}
+  margin: 0;
+  color: #fff;
+  background: #2b91fd;
+  padding-left: 5px;
+  font-size: .9em; }
+
 .style-swticher-body p:nth-of-type(1) {
-	padding-top: 5px;
-}
+  padding-top: 5px; }
+
 .style-swticher-body p:last-child {
-	padding-bottom: 5px;
-}
+  padding-bottom: 5px; }
+
+.outerlinks {
+  margin-top: 30px; }
+  .outerlinks p {
+    background: #2b91fd;
+    width: 85%;
+    line-height: 50px;
+    color: #fff;
+    font-family: 隶书, 微软雅黑, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #bbb; }
+  .outerlinks ul li {
+    line-height: 50px;
+    padding-right: 20px; }
+
+.search-wrap {
+  width: 60%; }
+  .search-wrap .nav-tabs > li.active > a, .search-wrap .nav-tabs > li.active > a:focus, .search-wrap .nav-tabs > li.active > a:hover {
+    color: #fff;
+    background: transparent;
+    border: none; }
+  .search-wrap ul.nav-tabs {
+    border: none; }
+    .search-wrap ul.nav-tabs li a {
+      background: transparent;
+      color: #fff;
+      border: none; }
+  .search-wrap .input-group .input-group-btn button {
+    line-height: 30px;
+    height: 45px; }
+  .search-wrap .input-group .form-control {
+    width: 85%;
+    line-height: 45px;
+    height: 45px; }
+  .search-wrap .input-group .search-btn {
+    background: #2b91fd;
+    display: inline-block;
+    width: 13%;
+    line-height: 45px; }
+    .search-wrap .input-group .search-btn .fa-search {
+      color: #fff;
+      font-size: 25px; }
+
+/*# sourceMappingURL=style.css.map */
