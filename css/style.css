@@ -367,4 +367,24 @@ footer .weixin button:focus {
   .search-main ul.nav-tabs li.active a::before {
     background: rgba(0, 147, 255, 0.63); }
 
+.md-modal h3 {
+  font-size: 20px; }
+.md-modal .md-close {
+  display: block;
+  padding: 7px 17px;
+  background: #0b70db;
+  color: #fff;
+  width: 10%;
+  min-width: 100px;
+  margin: 20px auto;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer; }
+  .md-modal .md-close:hover {
+    background: #1c81ec;
+    transition: background-color .15s linear; }
+  .md-modal .md-close:focus {
+    background: #2d92fd; }
+
 /*# sourceMappingURL=style.css.map */
