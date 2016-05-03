@@ -350,3 +350,15 @@ var App = function () {
 // 			$("#myModal").css("display", "block");
 // 		})
 // })
+
+// 下滚搜索渐变
+$(document).ready(function(){
+	$(".search-wrap").css("opacity", ".99");
+	$(window).scroll(function() {
+		if($(this).scrollTop() > 100) {
+			var i = ($(this).scrollTop()-100)/400;
+			console.log(i);
+			$(".search-wrap").css("opacity", 1-2*i);
+		}
+	})
+})

@@ -15,6 +15,8 @@
     <link rel="stylesheet" type="text/css" href="css/blocks.css">
     <link rel="stylesheet" type="text/css" href="css/csshake.css">
     <link rel="stylesheet" type="text/css" href="css/linkstyle.css">
+    
+    <link rel="stylesheet" type="text/css" href="css/component.css">
     <!--<link rel="stylesheet" type="text/css" href="css/app.css">-->
 </head>
 
@@ -54,9 +56,9 @@
 
                 <!-- Toggle get grouped for better mobile display -->
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="fa fa-bars"></span>
-				</button>
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="fa fa-bars"></span>
+                </button>
                 <!-- End Toggle -->
             </div>
             <!--/end container-->
@@ -188,70 +190,96 @@
             </div>
             <!--/navbar-collapse-->
         </div>
-        
-        
-            <!--=== Promo Block ===-->
-    <div class="interactive-slider-v2 intro-promo-img intro-promo-cover-dark parallaxBg">
-      <div class="container search-wrap" data-start="opacity: 1;" data-320="opacity: 0;">
-      
-      
-      <div class="search-main">
 
-  <!-- Nav tabs -->
-  <ul class="nav nav-tabs" role="tablist">
-    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">馆藏目录</a></li>
-    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">超星发现</a></li>
-    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">e读搜索</a></li>
-    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">外文发现</a></li>
-  </ul>
 
-  <!-- Tab panes -->
-  <div class="tab-content">
-    <div role="tabpanel" class="tab-pane active" id="home">
-        
-        <div class="input-group">
-      <div class="input-group-btn">
-        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
-        <ul class="dropdown-menu">
-          <li><a href="#">题名</a></li>
-          <li><a href="#">责任者</a></li>
-          <li><a href="#">主题词</a></li>
-          <li><a href="#">ISBN/ISSN</a></li>
-          <li><a href="#">订购号</a></li>
-        </ul>
-      </div><!-- /btn-group -->
-      <input type="text" class="form-control" aria-label="...">
-      <a class="search-btn" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
-    </div><!-- /input-group -->
-        
-    </div>
-    <div role="tabpanel" class="tab-pane" id="profile">
-        
-        <div class="input-group">
-      <div class="input-group-btn">
-        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
-        <ul class="dropdown-menu">
-          <li><a href="#">中文检索</a></li>
-          <li role="separator" class="divider"></li>
-          <li><a href="#">英文检索</a></li>
-        </ul>
-      </div><!-- /btn-group -->
-      <input type="text" class="form-control" aria-label="...">
-    </div><!-- /input-group -->
-        
-    </div>
-    <div role="tabpanel" class="tab-pane" id="messages">...</div>
-    <div role="tabpanel" class="tab-pane" id="settings">...</div>
-  </div>
+        <!--=== Promo Block ===-->
+        <div class="interactive-slider-v2 intro-promo-img intro-promo-cover-dark parallaxBg">
+            <div class="container search-wrap">
 
-</div>
-      
-        <!-- End Social Block -->
-      </div>
-    </div>
-    <!--=== End Promo Block ===-->
-        
-        
+
+                <div class="search-main">
+
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">馆藏目录</a></li>
+                        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">超星发现</a></li>
+                        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">e读搜索</a></li>
+                        <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">外文发现</a></li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="home">
+
+                            <div class="input-group">
+                                <div class="input-group-btn">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">题名</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="#">责任者</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="#">主题词</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="#">ISBN/ISSN</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="#">索书号</a></li>
+                                    </ul>
+                                </div>
+                                <!-- /btn-group -->
+                                <input type="text" class="form-control" aria-label="...">
+                                <a class="search-btn" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+                            </div>
+                            <!-- /input-group -->
+
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="profile">
+
+                            <div class="input-group">
+                                <div class="input-group-btn">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">中文检索</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="#">英文检索</a></li>
+                                    </ul>
+                                </div>
+                                <!-- /btn-group -->
+                                <input type="text" class="form-control" aria-label="...">
+                                <a class="search-btn" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+                            </div>
+                            <!-- /input-group -->
+
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="messages">
+                              <div class="input-group whole-width">
+                                <!-- /btn-group -->
+                                <input type="text" class="form-control" aria-label="...">
+                                <a class="search-btn" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+                            </div>
+                            <!-- /input-group -->
+
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="settings">
+                              <div class="input-group whole-width">
+                               
+                                <!-- /btn-group -->
+                                <input type="text" class="form-control" aria-label="...">
+                                <a class="search-btn" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+                            </div>
+                            <!-- /input-group -->
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- End Social Block -->
+            </div>
+        </div>
+        <!--=== End Promo Block ===-->
+
+
 
         <div class="container content-sm">
 
@@ -331,7 +359,7 @@
                 <h2>新书推荐</h2></div>
             <div class="owl-clients-v1">
                 <div class="item shake">
-                    <img src="image/exbook.jpg" alt="">
+                    <img src="image/exbook.jpg" alt="" class="md-trigger" data-modal="modal-1">
                 </div>
                 <div class="item shake shake-hard">
                     <img src="image/exbook.jpg" alt="">
@@ -362,30 +390,30 @@
                 </div>
             </div>
             <!--图书推荐--完-->
-             <div class="outerlinks row">
-     <!--<div class="headline">
+            <div class="outerlinks row">
+                <!--<div class="headline">
                 <h2>友情链接</h2></div>-->
-              <div class="col-md-2">
-                  <p class="shake"> 友情链接 </p>                 
-              </div>
-              <div class="col-md-10">
-                  <ul class="list-inline">
-                      <li><a href="/index.html">中国大学</a></li>
-                      <li><a href="/index.html">中国大学</a></li>
-                      <li><a href="/index.html">中国大学</a></li>
-                      <li><a href="/index.html">中国大学</a></li>
-                      <li><a href="/index.html">中国大学</a></li>
-                      <li><a href="/index.html">中国大学</a></li>
-                      <li><a href="/index.html">中国大学</a></li>
-                      <li><a href="/index.html">中国大学</a></li>
-                      <li><a href="/index.html">中国大学</a></li>
-                      <li><a href="/index.html">中国大学</a></li>
-                  </ul>
-              </div>
+                <div class="col-md-2">
+                    <p class="shake"> 友情链接 </p>
+                </div>
+                <div class="col-md-10">
+                    <ul class="list-inline">
+                        <li><a href="/index.html">中国大学</a></li>
+                        <li><a href="/index.html">中国大学</a></li>
+                        <li><a href="/index.html">中国大学</a></li>
+                        <li><a href="/index.html">中国大学</a></li>
+                        <li><a href="/index.html">中国大学</a></li>
+                        <li><a href="/index.html">中国大学</a></li>
+                        <li><a href="/index.html">中国大学</a></li>
+                        <li><a href="/index.html">中国大学</a></li>
+                        <li><a href="/index.html">中国大学</a></li>
+                        <li><a href="/index.html">中国大学</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
 
-<div class="hr container-fluid"></div>
+        <div class="hr container-fluid"></div>
         <footer class="container">
             <div class="row">
                 <div class="logo-bottom col-md-4">
@@ -400,14 +428,14 @@
                     </p>
                 </div>
                 <div class="weibo col-md-1">
-                        <i class="fa fa-weibo" aria-hidden="true"></i>
+                    <i class="fa fa-weibo" aria-hidden="true"></i>
                 </div>
                 <div class="weixin col-md-1">
                     <i class="fa fa-weixin" aria-hidden="true"></i>
-              <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-  
-</button>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+
+                    </button>
 
                 </div>
 
@@ -417,32 +445,32 @@
     </div>
 
 
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">关注我们</h4>
-      </div>
-      <div class="modal-body">
-        <img src="image/qrcode_lib-xpu_1.jpg" alt="">
-      </div>
-      
-    </div>
-  </div>
-</div>
-   
-<!--=== Style Switcher ===-->
-	<i class="style-switcher-btn fa fa-angle-left hidden-xs"></i>
-    
-	<div class="style-switcher animated fadeInRight">
-		<div class="style-swticher-header">
-			<div class="style-switcher-heading">在线咨询</div>
-			<div class="theme-close"><i class="fa fa-times"></i></div>
-		</div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">关注我们</h4>
+                </div>
+                <div class="modal-body">
+                    <img src="image/qrcode_lib-xpu_1.jpg" alt="">
+                </div>
 
-		<div class="style-swticher-body">
+            </div>
+        </div>
+    </div>
+
+    <!--=== Style Switcher ===-->
+    <i class="style-switcher-btn fa fa-angle-left hidden-xs"></i>
+
+    <div class="style-switcher animated fadeInRight">
+        <div class="style-swticher-header">
+            <div class="style-switcher-heading">在线咨询</div>
+            <div class="theme-close"><i class="fa fa-times"></i></div>
+        </div>
+
+        <div class="style-swticher-body">
             <ul>
                 <li class="qqonline"><i class="fa fa-qq" aria-hidden="true"></i>总咨询</li>
                 <li class="qqoffline"><i class="fa fa-qq" aria-hidden="true"></i>图书借还</li>
@@ -451,13 +479,27 @@
                 <li><i class="fa fa-qq" aria-hidden="true"></i>期刊借阅</li>
                 <li><i class="fa fa-qq" aria-hidden="true"></i>网络技术</li>
             </ul>
-		<p>咨询时间：周一至周五</p><p>上午：8:00-12:00,下午：14:00-18:00</p>
-		</div>
-	</div><!--/style-switcher-->
-	<!--=== End Style Switcher ===-->
-
-
-
+            <p>咨询时间：周一至周五</p>
+            <p>上午：8:00-12:00,下午：14:00-18:00</p>
+        </div>
+    </div>
+    <!--/style-switcher-->
+    <!--=== End Style Switcher ===-->
+    
+<div class="md-modal md-effect-1" id="modal-1">
+			<div class="md-content">
+				<h3>Modal Dialog</h3>
+				<div>
+					<!--<p>This is a modal window. You can do the following things with it:</p>
+					<ul>
+						<li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
+						<li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
+						<li><strong>Close:</strong> click on the button below to close the modal.</li>
+					</ul>-->
+					<button class="md-close">Close me!</button>
+				</div>
+			</div>
+</div>
 
     <script src="js/jquery-2.2.3.min.js" charset="utf-8"></script>
     <script src="js/bootstrap.min.js" charset="utf-8"></script>
@@ -465,6 +507,11 @@
     <script src="js/bookslider.js"></script>
     <script src="js/owl.carousel.js"></script>
     <script src="js/style-switcher.js"></script>
+    <script src="js/back-to-top.js"></script>
+
+<script src="js/classie.js"></script>
+<script src="js/modalEffects.js"></script>
+
     <script type="text/javascript">
         jQuery(document).ready(function() {
             App.init();

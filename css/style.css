@@ -95,6 +95,13 @@ select::-ms-expand {
   .no-headline h2 {
     border-bottom: none !important; }
 
+.interactive-slider-v2 {
+  height: 450px; }
+  .interactive-slider-v2 .search-wrap {
+    position: relative;
+    top: 20%;
+    height: 100px; }
+
 /*标题新闻*/
 .news .newstop h3 {
   font-family: 黑体, 微软雅黑, sans-serif;
@@ -178,12 +185,12 @@ select::-ms-expand {
   width: 100px; }
 
 .hr {
-  margin: 15px 0;
+  margin-top: 15px;
   border-bottom: 3px solid #2b91fd; }
 
 /*页脚*/
 footer {
-  padding: 15px 0; }
+  padding-top: 15px; }
   footer .logo-bottom img {
     width: 50%; }
 
@@ -317,7 +324,7 @@ footer .weixin button:focus {
     line-height: 30px;
     height: 45px; }
   .search-wrap .input-group .form-control {
-    width: 85%;
+    width: 87%;
     line-height: 45px;
     height: 45px; }
   .search-wrap .input-group .search-btn {
@@ -328,5 +335,36 @@ footer .weixin button:focus {
     .search-wrap .input-group .search-btn .fa-search {
       color: #fff;
       font-size: 25px; }
+    .search-wrap .input-group .search-btn:hover {
+      background: #1c81ec;
+      transition: background-color .15s linear; }
+    .search-wrap .input-group .search-btn:focus {
+      background: #0b70db; }
+  .search-wrap .whole-width {
+    width: 100%; }
+    .search-wrap .whole-width .form-control {
+      width: 88%; }
+    .search-wrap .whole-width .search-btn {
+      width: 12%; }
+
+.search-main ul.nav-tabs {
+  padding-left: 11px; }
+  .search-main ul.nav-tabs li a {
+    position: relative; }
+    .search-main ul.nav-tabs li a:hover:before {
+      background: rgba(0, 147, 255, 0.63); }
+  .search-main ul.nav-tabs li a::before {
+    content: '';
+    /* To generate the box */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background: rgba(168, 226, 255, 0.22);
+    transform: skew(-30deg); }
+  .search-main ul.nav-tabs li.active a::before {
+    background: rgba(0, 147, 255, 0.63); }
 
 /*# sourceMappingURL=style.css.map */

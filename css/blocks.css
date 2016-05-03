@@ -3591,7 +3591,7 @@
 
 .interactive-slider-v2.intro-promo-img {
   padding: 80px 0;
-  background: url(../image/header.png) repeat-x fixed center center / cover ;
+  background: url(../image/promo.jpg) repeat-x fixed center center / cover ;
   -webkit-animation: infiniteBackground 65s linear infinite;
   -moz-animation: infiniteBackground 65s linear infinite;
   animation: infiniteBackground 65s linear infinite;
@@ -4846,12 +4846,12 @@
 	[44. Back To Top]
 ----------------------------------------------------*/
 #topcontrol {
-  color: #fff;
+  color: #000;
   z-index: 99;
   width: 30px;
   height: 30px;
   font-size: 20px;
-  background: #222;
+  background: transparent;
   position: relative;
   right: 14px !important;
   bottom: 11px !important;
@@ -4869,7 +4869,7 @@
 
 #topcontrol:hover {
   color: #fff;
-  background: #72c02c;
+  background: #2b91fd;
   transition: all 0.3s ease-in-out;
 }
 

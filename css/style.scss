@@ -107,6 +107,15 @@ select::-ms-expand {
 		border-bottom: none!important;
 	}
 }
+// banner高度
+.interactive-slider-v2 {
+	height: 450px;
+	.search-wrap {
+		position: relative;
+		top: 20%;
+		height: 100px;
+	}
+}
 /*标题新闻*/
 .news .newstop h3 {
 	font-family: 黑体, 微软雅黑, sans-serif;
@@ -206,12 +215,12 @@ select::-ms-expand {
 }
 
 .hr {
-	margin: 15px 0;
+	margin-top: 15px;
 	border-bottom: 3px solid #2b91fd;
 }
 /*页脚*/
 footer {
-	padding: 15px 0;
+	padding-top: 15px;
 	.logo-bottom {
 		img {
 			width: 50%;
@@ -384,7 +393,7 @@ footer .weixin button:focus
 			}	
 		}
 		.form-control {
-			width: 85%;
+			width: 87%;
 			line-height: 45px;
 			height: 45px;
 		}
@@ -396,6 +405,52 @@ footer .weixin button:focus
 			.fa-search {
 				color: #fff;
 				font-size: 25px;
+			}
+			&:hover {
+				background: #1c81ec;
+				transition: background-color .15s linear; 
+			}
+			&:focus {
+				background: #0b70db;
+			}
+		}
+	}
+	.whole-width {
+		width: 100%;
+		.form-control {
+			width: 88%;
+		}
+		.search-btn {
+			width: 12%;
+		}
+	}
+}
+
+// 标签效果
+.search-main {
+	ul.nav-tabs {
+		padding-left: 11px;
+		li {
+			a {
+				position: relative;
+				&:hover {
+					&:before {
+						background: rgba(0, 147, 255, 0.63);
+					}
+				}
+			}
+			a::before {
+				content: ''; /* To generate the box */
+    			position: absolute;
+    			top: 0; right: 0; bottom: 0; left: 0;
+    			z-index: -1;
+   				background: rgba(168, 226, 255, 0.22);
+    			transform: skew(-30deg);
+			}
+		}
+		li.active {
+			a::before {
+				background: rgba(0, 147, 255, 0.63);
 			}
 		}
 	}
