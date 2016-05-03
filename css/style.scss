@@ -89,7 +89,7 @@ select::-ms-expand {
 }
 .headline {
 	border-bottom: 2px solid #eee;
-	margin: 15px 0;
+	margin: 40px 0 25px;
 	padding-bottom: 5px;
 	width: 300px;
 	h2 {
@@ -116,6 +116,15 @@ select::-ms-expand {
 		height: 100px;
 	}
 }
+// 轮播图
+.carousel {
+	.item {
+		img {
+			height: 300px;
+			width: 100%;
+		}
+	}
+}
 /*标题新闻*/
 .news .newstop h3 {
 	font-family: 黑体, 微软雅黑, sans-serif;
@@ -129,7 +138,10 @@ select::-ms-expand {
 	text-align: right;
 	color: #777;
 }
-
+.news .newstop .img-responsive {
+	width: 100%;
+	height: 130px;
+}
 /*新闻列表*/
 .news .newslist .time {
 	float: right;
@@ -139,7 +151,7 @@ select::-ms-expand {
 	margin-right: 20px;*/
 }
 .newslist {
-	margin-top: 20px;
+	margin-top: 10px;
 	ul {
 		li {
 			line-height: 2.2;
@@ -209,9 +221,15 @@ select::-ms-expand {
 /*图书推荐*/
 .owl-clients-v1 .item {
 	text-align: center;
+	a {
+		display: block;
+		padding-top: 15px;
+		color: #000;
+	}
 }
 .owl-clients-v1 .item img {
 	width: 100px;
+	height: 130px;
 }
 
 .hr {
@@ -235,9 +253,15 @@ footer .col-md-1 {
 }
 footer .weixin {
 	position: relative;
+	&:hover {
+		color: #9AEB63;
+	}
 }
 footer .weixin button {
 	position: absolute;
+}
+footer .weibo:hover {
+	color: #EA2000;
 }
 footer .weixin button {
 	width: 50px; 
@@ -255,6 +279,10 @@ footer .weixin button:active,
 footer .weixin button:focus
  {
 	background: transparent;
+}
+footer .copyright p:first-child {
+	margin-bottom: 0;
+	font-size: .9em;
 }
 .modal-body {
 	img {
@@ -350,7 +378,7 @@ footer .weixin button:focus
 .outerlinks {
 	margin-top: 30px;
 	p {
-		background: #2b91fd;
+		background: linear-gradient(to right, rgba(11, 11, 150, 0.9), rgba(255, 255, 255, 0.3));
 		width: 85%;
 		// height: 50px;
 		line-height: 50px;
@@ -361,6 +389,8 @@ footer .weixin button:focus
 		box-shadow: 2px 2px 3px #bbb;
 	}
 	ul {
+		// background: linear-gradient(to right, rgba(103, 205, 255, 0.9), rgba(255, 255, 255, 0.2));
+		// box-shadow: 3px 3px 5px #ccc;
 		li {
 			line-height: 50px;
 			padding-right: 20px;
@@ -458,8 +488,28 @@ footer .weixin button:focus
 
 // 新书推荐弹出样式
 .md-modal {
+	box-shadow: 3px 3px 5px #aaa;
 	h3 {
 		font-size: 20px;
+	}
+	.row {
+		img {
+			width: 100%;
+		}
+		p {
+			color: #2b92fd;
+			span {
+				color: #000;
+			}
+			a {
+				color: #dd0000;
+			}
+		}
+		.name {
+			font-size: 16px;
+			font-weight: bold;
+			color: #000;
+		}
 	}
 	.md-close {
 		display: block;
@@ -481,4 +531,27 @@ footer .weixin button:focus
 			background: #2d92fd;
 		}		
 	}
+}
+
+/** 404 **/
+.notfound {
+	margin: 15px auto;
+	img {
+		display: block;
+		// text-align: center;
+		margin: 0 auto;
+		// width: 100%;
+	}
+}
+
+// 导航固定样式
+.nav-fixed {
+	position: fixed;
+	width: 100%;
+	transition: all, .35s;
+}
+.nav .dropdown {
+	.dropdown-menu.pull-right {
+	right: auto;
+}
 }

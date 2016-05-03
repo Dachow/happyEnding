@@ -361,4 +361,32 @@ $(document).ready(function(){
 			$(".search-wrap").css("opacity", 1-2*i);
 		}
 	})
+	
+	// 导航固定
+		$(window).scroll(function() {
+		if($(this).scrollTop() > 360) {
+			$(".header").addClass("nav-fixed");
+		} else {
+			$(".header").removeClass("nav-fixed");
+		}
+	})
+})
+
+// 搜索下拉填充
+$(document).ready(function(){
+	$(".input-group .dropdown-menu").find("a").click(function(){
+		var value = $(this).text();
+		$(".input-group .input-group-btn .btn-default").text(value);
+		$(".input-group .input-group-btn .btn-default").append("&nbsp;<span class='caret'></span>");
+	})
+	
+	$(".search-main .nav-tabs").find("a").eq(0).click(function(){
+		$(".input-group .input-group-btn .btn-default").text("题名");
+		$(".input-group .input-group-btn .btn-default").append("&nbsp;<span class='caret'></span>");
+	})
+	
+		$(".search-main .nav-tabs").find("a").eq(1).click(function(){
+		$(".input-group .input-group-btn .btn-default").text("中文检索");
+		$(".input-group .input-group-btn .btn-default").append("&nbsp;<span class='caret'></span>");
+	})
 })
