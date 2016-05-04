@@ -13,10 +13,11 @@
     <link rel="stylesheet" type="text/css" href="css/bookslider.css">
     <link rel="stylesheet" type="text/css" href="css/style-switcher.css">
     <link rel="stylesheet" type="text/css" href="css/blocks.css">
-    <link rel="stylesheet" type="text/css" href="css/csshake">
-    <link rel="stylesheet" type="text/css" href="css/linkstyle.css">
+    <link rel="stylesheet" type="text/css" href="css/signin.css">
+    <!--<link rel="stylesheet" type="text/css" href="css/csshake">-->
+    <!--<link rel="stylesheet" type="text/css" href="css/linkstyle.css">-->
 
-    <link rel="stylesheet" type="text/css" href="css/component.css">
+    <!--<link rel="stylesheet" type="text/css" href="css/component.css">-->
     <!--<link rel="stylesheet" type="text/css" href="css/app.css">-->
 </head>
 
@@ -213,86 +214,37 @@
 
 
 
-        <div class="container content-sm">
+        <div class="login container-fluid">
 
-            <div class="container notfound">
-                <div class="row">
-                    <div class="col-md-3"></div>
-                    <div class="col-md-6">
-                        <img src="image/404notfound.jpg" alt="">
+            <form class="form-signin">
+                <!--<h2 class="form-signin-heading">登陆</h2>-->
+                <div class="name">
+                    <label for="inputEmail">用户名 ></label>
+                    <select>
+<option value="证件号" class="zjh">证件号</option>
+<option value="条码" class="tm">条码</option>
+<option value="Email" class="yx">Email</option>
+</select>
+                    <input type="text" id="inputName" class="form-control" placeholder="证件号、条码或Email" required autofocus>
+                </div>
+                <div class="password">
+                    <label for="inputPassword">密码</label>
+                    <input type="password" id="inputPassword" class="form-control" placeholder="请输入密码" required>
+                    <div class="checkbox">
                     </div>
-                    <div class="col-md-3"></div>
+
+                    <label>
+            <input type="checkbox" value="remember-me"> 记住密码
+          </label>
                 </div>
-            </div>
+
+                <div class="btn btn-xs btn-link">重置密码</div>
+                <button class="btn btn-primary btn-block" type="submit">登陆</button>
 
 
-            <!--图书推荐-->
-            <div class="headline">
-                <h2>新书推荐</h2></div>
-            <div class="owl-clients-v1">
-                <div class="item">
-                    <img src="image/index/exbook.jpg" alt="数学之美" class="md-trigger" data-modal="modal-1">
-                    <a href="#">数学之美</a>
-                </div>
-                <div class="item">
-                    <img src="image/index/littleprince.jpg" alt="小王子">
-                    <a href="#">小王子</a>
-                </div>
-                <div class="item">
-                    <img src="image/index/kiterunner.jpg" alt="追风筝的人">
-                    <a href="#">追风筝的人</a>
-                </div>
-                <div class="item">
-                    <img src="image/index/wc.jpg" alt="围城">
-                    <a href="#">围城</a>
-                </div>
-                <div class="item">
-                    <img src="image/index/hz.jpg" alt="活着">
-                    <a href="#">活着</a>
-                </div>
-                <div class="item">
-                    <img src="image/index/byx.jpg" alt="白夜行">
-                    <a href="#">白夜行</a>
-                </div>
-                <div class="item">
-                    <img src="image/index/one2nan.jpg" alt="从一到无穷大">
-                    <a href="#">从一到无穷大</a>
-                </div>
-                <div class="item">
-                    <img src="image/index/tz.jpg" alt="上帝掷骰子吗-量子物理史话">
-                    <a href="#">上帝掷骰子吗？</a>
-                </div>
-                <div class="item">
-                    <img src="image/index/lxh.jpg" alt="罗小黑战记">
-                    <a href="#">罗小黑战记</a>
-                </div>
-                <div class="item">
-                    <img src="image/index/gdsx.jpg" alt="高等数学（上册）">
-                    <a href="#">高等数学（上册）</a>
-                </div>
-            </div>
-            <!--图书推荐--完-->
-            <div class="outerlinks row">
-                <!--<div class="headline">
-                <h2>友情链接</h2></div>-->
-                <div class="col-md-2">
-                    <p class="shake">友情链接 </p>
-                </div>
-                <div class="col-md-10">
-                    <ul class="list-inline">
-                        <li><a href="/index.html">中国大学</a></li>
-                        <li><a href="/index.html">国内外图书馆</a></li>
-                        <li><a href="/index.html">高校图书馆</a></li>
-                        <li><a href="/index.html">图情搜索</a></li>
-                        <li><a href="/index.html">高校BBS</a></li>
-                        <li><a href="/index.html">院系链接</a></li>
-                        <li><a href="/index.html">校管理机构</a></li>
-                        <li><a href="/index.html">天气预报</a></li>
-                        <li><a href="/index.html">数字资源管理</a></li>
-                        <li><a href="/index.html">网站管理</a></li>
-                    </ul>
-                </div>
-            </div>
+
+            </form>
+
         </div>
 
         <div class="hr container-fluid"></div>
@@ -368,29 +320,7 @@
     <!--/style-switcher-->
     <!--=== End Style Switcher ===-->
 
-    <div class="md-modal md-effect-1" id="modal-1">
-        <div class="md-content">
-            <h3>数学之美</h3>
-            <div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <img src="image/index/exbook.jpg" alt="">
-                    </div>
-                    <div class="col-md-8">
-                        <p class="name">《数学之美》</p>
-                        <p class="author">作者：<span>吴军</span></p>
-                        <p class="pubment">出版社：<span>人民邮电出版社</span></p>
-                        <p class="pubtime">出版时间：<span>2012-5</span></p>
-                        <p class="isbn">ISBN: <span>9787115282828</span></p>
-                        <p class="ssh">索书号：<span>TP301.6/136(2)</span></p>
-                        <p class="info">简介：<span>书中将高深的数学原理讲得更加通俗易懂，让非专业读者也能领略数学的魅力。通过具体实例教会读者在解决问题时如何化繁为简，如何用数学去解决工程问题，如何跳出固有思维不断去思考创新等。</span><a href="">查看详细</a></p>
 
-                    </div>
-                </div>
-                <a class="md-close">关闭</a>
-            </div>
-        </div>
-    </div>
 
     <script src="js/jquery-2.2.3.min.js" charset="utf-8"></script>
     <script src="js/bootstrap.min.js" charset="utf-8"></script>

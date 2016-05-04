@@ -390,3 +390,14 @@ $(document).ready(function(){
 		$(".input-group .input-group-btn .btn-default").append("&nbsp;<span class='caret'></span>");
 	})
 })
+
+// login页面动态设置main区高度
+$(document).ready(function(){
+	var xx = $(window).height();
+	$(".login").css("height", xx-200);
+})
+
+// login页面表单选择
+$(document).ready(function(){
+
+})
