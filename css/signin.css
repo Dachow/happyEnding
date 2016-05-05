@@ -76,3 +76,7 @@ footer {
 .login .name {
   margin-bottom: 15px;
 }
+.btn-primary:focus,
+.btn-primary:active {
+  background: #175070!important;
+}

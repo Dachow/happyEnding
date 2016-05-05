@@ -399,5 +399,17 @@ $(document).ready(function(){
 
 // login页面表单选择
 $(document).ready(function(){
-
+	$(".login select").change(function(){
+		var yy = $(".login select").val();
+		if(yy == "证件号") {
+			$("#inputName").attr("placeholder", "请输入证件号");
+			$("#inputName").attr("type", "text");
+		}else if(yy == "条码") {
+			$("#inputName").attr("placeholder", "请输入条码");
+			$("#inputName").attr("type", "text");
+		} else if(yy == "Email") {
+			$("#inputName").attr("placeholder", "请输入Email");
+			$("#inputName").attr("type", "email");
+		}
+	})
 })
