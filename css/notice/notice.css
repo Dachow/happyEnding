@@ -1,0 +1,26 @@
+/* http://www.jq22.com/demo/Flatlab_Admin20160413/inbox.html */
+
+.notice {
+    display: inline-block;
+    /*margin-top: 60px;*/
+    padding: 15px;
+    width: 100%;
+}
+.modal-backdrop {
+    z-index: -1;
+}
+.modal-dialog {
+    padding-top: 30px;
+}
+.modal-dialog * {
+    font-family: 微软雅黑, "Helvetica Neue",'Open Sans', sans-serif;
+}
+.user-head .inbox-avatar img {
+    width: 100%;
+}
+.modal-header {
+    background: #00A8B3;
+}
+.modal-header h4 {
+    color: #fff;
+}
