@@ -24,5 +24,35 @@
 {
     padding:4px 4px;
     margin:0px;
-    border-bottom:1px dotted #555; 
+    border-bottom:1px dashed #ccc; 
+}
+
+.search-main ul.nav-tabs li a::before {
+    transform: initial;
+    background: #fff;
+}
+.search-wrap ul.nav-tabs li a {
+    color: #000;
+}
+.search-wrap {
+    margin: 0 auto;
+}
+.wrapper > .main.container {
+    margin-top: 20px;
+}
+.search-main ul.nav-tabs {
+    padding-left: 0;
+}
+.panel-footer > ul:nth-of-type(2) {
+    display: none;
+}
+.demo1 table tr > td:last-child {
+    padding-left: 10px;
+}
+.search-wrap .input-group .search-btn {
+    background: transparent;
+}
+.search-wrap .input-group .search-btn .fa-search {
+    color: #777;
+    padding-left: 10px;
 }
