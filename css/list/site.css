@@ -56,3 +56,38 @@
     color: #777;
     padding-left: 10px;
 }
+#iframe-wrap {
+    
+}
+.search-wrap {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.dropdown-menu {
+    z-index: 999999;   
+}
+.search-main .nav-tabs>li {
+    width: 20%;
+}
+.search-main .nav-tabs>li a {
+    padding: 10px 0;
+    text-align: center
+}
+.search-main .nav-tabs>li a:before {
+    border-top-left-radius: 10px;
+}
+
+.wrapper > .main.container > .row > .col-md-4 > div:first-child {
+    position: relative;
+    z-index: 999;
+}
+.search-wrap .input-group .search-btn:link,
+.search-wrap .input-group .search-btn:visited,
+.search-wrap .input-group .search-btn:focus,
+.search-wrap .input-group .search-btn:hover,
+.search-wrap .input-group .search-btn:active {
+    background: transparent;
+}
+.search-wrap .input-group .search-btn:hover i {
+    color: #1c81ec;
+}

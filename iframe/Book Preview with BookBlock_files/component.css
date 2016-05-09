@@ -22,7 +22,7 @@ body {
 
 .bookshelf {
     position: relative;
-    margin: 40px auto 0;
+    margin: 0 auto 0;
     list-style: none;
     text-align: center;
 }
@@ -30,7 +30,7 @@ body {
 .bookshelf figure {
     position: relative;
     display: inline-block;
-    margin: 40px 0 0 0;
+    margin: 20px 0 0 0;
     padding: 45px 0;
     max-width: 75%;
     width: 324px;
