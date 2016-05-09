@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+         <link rel="stylesheet" href="css/back/fakeloader.css">
+    </head>
+    <body>
+        
+    <div id="fakeLoader"></div>
+    
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <script src="js/back/fakeloader.min.js"></script>
+    <script type="text/javascript">
+    $(".fakeloader").fakeLoader();
+</script>
+    <script>
+     $(document).ready(function(){
+            $(".fakeloader").fakeLoader({
+                timeToHide:1200,
+                bgColor:"#3498db",
+                spinner:"spinner4"
+            });
+        });
+
+</script>
+    </body>
+</html>
