@@ -3591,7 +3591,7 @@
 
 .interactive-slider-v2.intro-promo-img {
   padding: 80px 0;
-  background: url(../image/promo.jpg) repeat-x fixed center center / cover ;
+  background: url(../image/image.png) repeat-x fixed center center / cover ;
   -webkit-animation: infiniteBackground 65s linear infinite;
   -moz-animation: infiniteBackground 65s linear infinite;
   animation: infiniteBackground 65s linear infinite;
