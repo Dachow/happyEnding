@@ -27,12 +27,18 @@
         <div class="header">
             <div class="container">
                 <!-- Logo -->
-                <a class="logo" href="index.html">
-                    <img src="image/index/logo.png" alt="Logo"><span class="h1">图书馆</span>
-                </a>
+                <div class="row">
+                  <div class="col-md-5 col-xs-8">
+                  <a class="logo" href="index.html">
+                      <img src="image/index/logo.png" alt="Logo">
+                  </a>
+                  </div>
+
+
                 <!-- End Logo -->
 
                 <!-- Topbar -->
+                <div class="col-md-2 col-xs-4 pull-right">
                 <div class="topbar">
                     <ul class="loginbar pull-right">
                         <li class="hoverSelector">
@@ -52,6 +58,8 @@
                         <li class="topbar-devider"></li>
                         <li><a href="login.html">登陆</a></li>
                     </ul>
+                </div>
+                </div>
                 </div>
                 <!-- End Topbar -->
 
@@ -260,10 +268,10 @@
                     <p>地址：西安市金花南路19号&nbsp;邮编：710048
                     </p>
                 </div>
-                <div class="weibo col-md-1">
+                <div class="weibo col-md-1 col-xs-2">
                     <i class="fa fa-weibo" aria-hidden="true"></i>
                 </div>
-                <div class="weixin col-md-1">
+                <div class="weixin col-md-1 col-xs-2">
                     <i class="fa fa-weixin" aria-hidden="true"></i>
                     <!-- Button trigger modal -->
                     <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
@@ -339,11 +347,11 @@
             ParallaxSlider.initParallaxSlider();
         });
     </script>
-    
+
     <script src="js/list/jquery.min.js"></script>
     <script>
         $(document).ready(function(){
-            
+
             $(".form-signin").submit(function(){
                 // $(window).location.href="loading.html"
                if($("#inputName").val() == "qinfen" && $("#inputPassword").val() == "password") {
@@ -357,6 +365,16 @@
             })
         })
     </script>
+
+    <style>
+    @media (max-width: 767px) {
+      .weixin, .weibo {
+        float: none;
+        width: auto;
+      }
+    }
+
+    </style>
 </body>
 
 </html>

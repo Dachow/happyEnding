@@ -8460,3 +8460,12 @@ fieldset[disabled] .flatdoc-wrapper .button:hover {
     color: #23b7e5;
     background-color: #fff
 }
+
+@media (max-width: 767px) {
+  .topnavbar .navbar-header {
+    height: 75px;
+  }
+  .sgz .album img {
+    padding-bottom: 3px;
+  }
+}

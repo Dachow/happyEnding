@@ -180,20 +180,22 @@ body.header-fixed-space-default {
 
 
 /*Logo*/
+@media (min-width: 769px) {
+	.header .logo {
+		height: 100%;
+		min-height: 40px;
+		min-width: 100px;
+		display: table-cell;
+		vertical-align: middle;
+	}
 
-.header .logo {
-	height: 100%;
-	min-height: 40px;
-	min-width: 100px;
-	display: table-cell;
-	vertical-align: middle;
+	.header .logo img {
+		z-index: 1;
+		margin: 12px 0;
+		position: relative;
+	}
 }
 
-.header .logo img {
-	z-index: 1;
-	margin: 12px 0;
-	position: relative;
-}
 
 
 /*Big Logo Style*/
@@ -230,9 +232,9 @@ body.header-fixed-space-default {
 	padding: 6px 10px 2px;
 }
 
-.header .navbar-toggle:hover {
+/*.header .navbar-toggle:hover {
 	background: #5fb611 !important;
-}
+}*/
 
 
 /*Navbar Collapse*/
@@ -1181,10 +1183,68 @@ body.header-fixed-space-default {
 }
 
 /*logo加图书馆样式*/
-.header span.h1 {
-	display: inline-block;
-    margin-left: -90px;
-    letter-spacing: 5px;
-    font-family: 隶书, sans-serif;
-	font-size: 34px;
+@media (min-width:768px) {
+	.header span.h1 {
+		display: inline-block;
+	    margin-left: -90px;
+	    letter-spacing: 5px;
+	    font-family: 隶书, sans-serif;
+		font-size: 34px;
+	}
+}
+@media (max-width: 767px) {
+	.header .logo img {
+		width: 100%;
+		position: relative;
+		top: 20px;
+	}
+	.header .row > .pull-right {
+		padding-left: 0;
+	}
+	.header .row > .pull-right ul {
+		padding: 0;
+	}
+	.header .row > .pull-right .topbar-devider {
+		margin: 0;
+	}
+	.header .navbar-toggle,
+	.header .navbar-toggle:hover,
+	.header .nav > li > .search:hover {
+		background: #2b91fd;
+		border-color: #2b91fd;
+	}
+	.search-wrap {
+		width: 100%!important;
+	}
+	.interactive-slider-v2 {
+		height: 250px!important;
+		padding: 45px 0!important;
+	}
+	.img-responsive {
+		height: 200px!important;
+		padding-bottom: 10px!important;
+	}
+	.newslist ul {
+		padding: 0!important;
+	}
+	.carousel .item img {
+		height: 250px!important;
+	}
+	.weibo {
+	margin-top: -105px;
+	margin-right: 65px;;
+	}
+	.weixin {
+		/*position: absolute!important;*/
+		right: 15px;
+		bottom: 40px;
+		margin-top: 10px;
+	}
+	.logo-bottom {
+		margin-bottom: 10px;
+	}
+	.navbar-toggle {
+		margin-top: 0;
+	}
+
 }

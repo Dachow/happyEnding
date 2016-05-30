@@ -14187,3 +14187,30 @@ ul.links {
 .sul-icon-window-selection:before {
     content: "\f11a"
 }
+
+@media (max-width: 767px) {
+  .record-metadata, .upper-record-metadata {
+    margin-right: 0;
+  }
+  .collapse {
+    display: block;
+    visibility: visible;
+  }
+  .record-toolbar .navbar-collapse>ul>li {
+    padding: 0;
+    float: right;
+  }
+  .record-toolbar .navbar-header {
+    display: none;
+  }
+  .record-toolbar .navbar-collapse {
+    border: none;
+  }
+  .header .navbar-toggle {
+    margin-top: 0;
+  }
+  #document .dl-horizontal.dl-invert {
+    padding-left: 5%;
+    padding-top: 20px;
+  }
+}
