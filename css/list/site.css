@@ -24,7 +24,7 @@
 {
     padding:4px 4px;
     margin:0px;
-    border-bottom:1px dashed #ccc; 
+    border-bottom:1px dashed #ccc;
 }
 
 .search-main ul.nav-tabs li a::before {
@@ -57,14 +57,14 @@
     padding-left: 10px;
 }
 #iframe-wrap {
-    
+
 }
 .search-wrap {
     width: 100%;
     margin-bottom: 20px;
 }
 .dropdown-menu {
-    z-index: 999999;   
+    z-index: 999999;
 }
 .search-main .nav-tabs>li {
     width: 20%;
@@ -90,4 +90,7 @@
 }
 .search-wrap .input-group .search-btn:hover i {
     color: #1c81ec;
+}
+.img-circle{
+  border-radius: 0;
 }
